@@ -1,65 +1,44 @@
 # 🚀 Portfolio Marwan – Développement Web Moderne
 
-Bienvenue dans ce projet de **portfolio personnel** développé dans le cadre d'une formation complète en **HTML**, **CSS** et **JavaScript**. Ce dépôt contient l’ensemble des fichiers source, le code structuré par sections, et les bonnes pratiques utilisées dans la création d’un site web professionnel.
+Ce projet est un portfolio personnel réalisé avec une architecture moderne combinant **Astro**, **React**, **Tailwind CSS** et **JavaScript**. Il met en pratique les bases essentielles du développement web tout en respectant les standards actuels en matière de performance, d'accessibilité et de responsive design.
 
 ---
 
-## 🎥 Aperçu en Vidéo
+## 🎯 Objectifs du projet
 
-> _Formation complète et détaillée destinée aux débutants_
-
-[![Voir la vidéo de la formation](https://img.youtube.com/vi/ID_DU_YOUTUBE/0.jpg)](https://www.youtube.com/watch?v=ID_DU_YOUTUBE)
-
----
-
-## 📚 Sommaire de la vidéo
-
-| Chapitre                          | Horodatage |
-|----------------------------------|------------|
-| Installation de VS Code          | 00:00      |
-| Dossiers & Fichiers              | 04:15      |
-| Doctype, Head & Body             | 09:45      |
-| Balise Header                    | 19:10      |
-| Menu de navigation               | 21:20      |
-| Icônes réseaux sociaux           | 32:54      |
-| Section Hero                     | 43:43      |
-| Section À propos                 | 52:05      |
-| Section Services                 | 59:57      |
-| Section Compétences              | 1:11:26    |
-| Section Portfolio                | 1:16:30    |
-| Section Contact                  | 1:27:17    |
-| Footer                           | 1:32:38    |
+- Construire une interface propre, maintenable et évolutive
+- Comprendre l’organisation modulaire d’un projet frontend moderne
+- Appliquer les bonnes pratiques en HTML, CSS et JavaScript
+- Intégrer des composants dynamiques avec React
+- Utiliser un système de design utilitaire (Tailwind)
+- Déployer un site rapide et SEO-friendly avec Astro
 
 ---
 
-## 🎯 Objectifs pédagogiques
+## 🛠️ Technologies utilisées
 
-- Comprendre la structure HTML d’un site
-- Styliser avec **CSS** (sélecteurs, classes, IDs, media queries, animations)
-- Ajouter des interactions dynamiques avec **JavaScript** (DOM, Events, Fonctions, Conditions)
-- Organiser un projet web de manière modulaire et maintenable
-
----
-
-## 🔧 Technologies utilisées
-
-- HTML5 / CSS3
-- JavaScript (ES6+)
-- Visual Studio Code
-- [FontAwesome](https://fontawesome.com) pour les icônes
-- Responsive design avec `@media`
+| Technologie     | Description                                                                 |
+|----------------|-----------------------------------------------------------------------------|
+| **Astro**       | Framework statique orienté performance, intégration facile de composants    |
+| **React**       | Bibliothèque JS pour créer des composants réactifs et réutilisables         |
+| **Tailwind CSS**| Framework CSS utilitaire pour un design rapide et responsive                |
+| **JavaScript**  | Langage pour les interactions dynamiques et la manipulation du DOM          |
+| **HTML5 / CSS3**| Structure sémantique + mise en page moderne avec animations et media queries|
 
 ---
 
-## 🖼️ Aperçu du projet
-
-![Aperçu Hero](./public/assets/hero-preview.png)  
-*Interface responsive avec menu, image de couverture et sections animées.*
-
----
-
-## 💻 Installation locale
+## 🗂️ Structure du projet
 
 ```bash
-git clone https://github.com/ton-utilisateur/Portfolio-Marwan.git
-cd Portfolio-Marwan
+Portfolio-Marwan/
+├── public/
+│   └── assets/             # Images et fichiers publics
+├── src/
+│   ├── components/         # Composants Astro ou React
+│   ├── layouts/            # Structures de page réutilisables
+│   ├── pages/              # Pages principales (index, contact, etc.)
+│   └── styles/             # Fichiers CSS globaux et personnalisés
+├── astro.config.mjs        # Configuration du projet Astro
+├── tailwind.config.cjs     # Configuration de Tailwind CSS
+├── package.json            # Dépendances et scripts npm
+└── README.md               # Présentation du projet
