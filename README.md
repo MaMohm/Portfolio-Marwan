@@ -91,4 +91,4 @@ Vous pouvez le cloner, l’utiliser, le modifier librement à des fins éducativ
 ## ✅ Mise en ligne
 
 Déployé avec : `GitHub Pages` / `Netlify` (à préciser si utilisé).  
-URL du projet : 
+URL du projet : https://github.com/MaMohm/mon_premier_projet.git
