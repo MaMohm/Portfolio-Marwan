@@ -1,44 +1,94 @@
-# 🚀 Portfolio Marwan – Développement Web Moderne
+# 💼 Portfolio de Marwan
 
-Ce projet est un portfolio personnel réalisé avec une architecture moderne combinant **Astro**, **React**, **Tailwind CSS** et **JavaScript**. Il met en pratique les bases essentielles du développement web tout en respectant les standards actuels en matière de performance, d'accessibilité et de responsive design.
+Bienvenue sur mon portfolio personnel. Ce projet met en avant mes compétences en **développement web** à travers une interface moderne, responsive et sécurisée. Il est développé en **HTML**, **CSS** et **JavaScript** sans framework externe, afin de maîtriser les bases du web.
 
----
+## 🌐 Aperçu
 
-## 🎯 Objectifs du projet
+![Aperçu du portfolio](./img/favicon/avatar.png)
 
-- Construire une interface propre, maintenable et évolutive
-- Comprendre l’organisation modulaire d’un projet frontend moderne
-- Appliquer les bonnes pratiques en HTML, CSS et JavaScript
-- Intégrer des composants dynamiques avec React
-- Utiliser un système de design utilitaire (Tailwind)
-- Déployer un site rapide et SEO-friendly avec Astro
+Ce site vitrine présente :
 
----
-
-## 🛠️ Technologies utilisées
-
-| Technologie     | Description                                                                 |
-|----------------|-----------------------------------------------------------------------------|
-| **Astro**       | Framework statique orienté performance, intégration facile de composants    |
-| **React**       | Bibliothèque JS pour créer des composants réactifs et réutilisables         |
-| **Tailwind CSS**| Framework CSS utilitaire pour un design rapide et responsive                |
-| **JavaScript**  | Langage pour les interactions dynamiques et la manipulation du DOM          |
-| **HTML5 / CSS3**| Structure sémantique + mise en page moderne avec animations et media queries|
+- Mes services proposés
+- Mes compétences techniques et industrielles
+- Mes projets réalisés
+- Un formulaire de contact fonctionnel
+- Une interface propre et responsive
 
 ---
 
-## 🗂️ Structure du projet
+## 🚀 Technologies utilisées
 
-```bash
-Portfolio-Marwan/
-├── public/
-│   └── assets/             # Images et fichiers publics
-├── src/
-│   ├── components/         # Composants Astro ou React
-│   ├── layouts/            # Structures de page réutilisables
-│   ├── pages/              # Pages principales (index, contact, etc.)
-│   └── styles/             # Fichiers CSS globaux et personnalisés
-├── astro.config.mjs        # Configuration du projet Astro
-├── tailwind.config.cjs     # Configuration de Tailwind CSS
-├── package.json            # Dépendances et scripts npm
-└── README.md               # Présentation du projet
+| Langage        | Description                              |
+|----------------|------------------------------------------|
+| HTML5          | Structure du site                        |
+| CSS3           | Mise en page, responsive design          |
+| JavaScript     | Dynamisme (formulaire, DOM, interactions) |
+
+---
+
+## 📁 Structure du projet
+
+.
+├── index.html
+├── /css
+│ └── styles.css
+├── /js
+│ └── script.js
+├── /img
+│ ├── favicon/
+│ └── sectors/
+└── /form
+└── action.php
+
+
+---
+
+## 📸 Fonctionnalités principales
+
+- **Navigation fluide** via la barre de menu
+- **Animation responsive** et grille de mise en page
+- **Formulaire avec validation** (HTML5 + JS)
+- **Intégration de réseaux sociaux** via des icônes SVG
+- **Design moderne** inspiré des portfolios professionnels
+
+---
+
+## 🧠 Objectifs pédagogiques
+
+Ce projet a été réalisé dans le cadre de mon apprentissage en développement web. Il m’a permis de :
+
+- Maîtriser les fondations du **front-end** (HTML, CSS, JS)
+- Comprendre la structuration d’un projet
+- Apprendre à intégrer des assets SVG et gérer l'accessibilité
+- M’entraîner à **documenter un projet** comme en entreprise
+
+---
+
+## 🛠️ Améliorations futures
+
+- Ajouter un système multilingue (Fr/En)
+- Intégrer un backend avec PHP pour la gestion des messages
+- Ajouter une page projet dynamique avec JavaScript
+- Optimiser le SEO avec les bonnes balises sémantiques
+- Intégrer des animations CSS ou avec GSAP
+
+---
+
+## 📬 Contact
+
+Vous pouvez me contacter via le [formulaire intégré](#contact) ou sur mes réseaux :  
+[LinkedIn](https://fr.linkedin.com/in/marwan-mohammad-6a0539165) | [GitHub](https://github.com/MaMohm)
+
+---
+
+## ⚖️ Licence
+
+Ce projet est sous licence **MIT**.  
+Vous pouvez le cloner, l’utiliser, le modifier librement à des fins éducatives ou professionnelles.
+
+---
+
+## ✅ Mise en ligne
+
+Déployé avec : `GitHub Pages` / `Netlify` (à préciser si utilisé).  
+URL du projet : 
