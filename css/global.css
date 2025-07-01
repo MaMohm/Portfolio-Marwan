@@ -14,16 +14,19 @@ a {
 
 img {
     max-width: 100%;
+    height: auto;
 }
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:  1.6rem; 
     color: #555;
-    margin: 0;
 }
 
 /* sections */
+section {
+    padding: 5.5rem 0;
+}
 
 .header {
     background: #FFFFFF;
@@ -54,8 +57,11 @@ body {
   
 .grid {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.grid_item {
+    width: 100%;
 }
 
 .nav {
@@ -203,4 +209,60 @@ transform: translateY(-8px);
 .hero {
     background: #5b6c78;
     color: white;
+    padding: 1rem 0 0 0 ;
+}
+
+.hero_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+
+@media screen and (max-width:749px) {
+    .hero_item.left {
+            order: 2;
+        }
+    
+    .hero_item.right {
+            order: 1;
+        }
+
+}
+
+@media  screen and (min-width:750px) {
+    .hero_item {
+    flex: 1 0 50%;
+    align-items: flex-start;
+    text-align: left;
+   }
+   .hero_avatar image {
+    max-width: 400px;
+    border-radius: 50% ;
+   }
+   .hero title {
+       font-size: 5rem;
+   }
+}
+
+
+.hero .grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.hero_item span{
+    text-transform:uppercase ;
+}
+
+.hero title{
+    font-size: 4rem;
+    margin: 1.6rem 0 0 0 0;
+
 }
