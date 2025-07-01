@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:  1.6rem; 
@@ -40,11 +44,20 @@ body {
 
 .container {
     padding: 1rem 2rem;
+}
+
+.d-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-   
+  
+.grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .nav {
     display:none;
 
@@ -71,6 +84,7 @@ body {
     justify-content: center;
     gap: 1rem;
 }
+
 
 .icons {
     display:flex;
@@ -108,13 +122,25 @@ a:hover {
 }
 
 .burger {
-    display: block;
+    background:none;
+    border: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+    margin-left: 1.2rem;
+}
+
+.bar{
     width: 22px;
     height: 3px;
-    margin: 4px 0;
-    transition: all 0.3s ease;
     background: #333;
-    
+    transition: all 0.3s ease;
 }
 
 .bar  .burger {
@@ -122,9 +148,29 @@ a:hover {
     width: 22px;
     height: 3px;
     margin: 4px 0;
-    transition: all 0.3 ease;
     background: #333;
 }
+
+
+
+.burger .bar::before .burger .bar::after {
+    display: block;
+    content: "";
+    width: 22px;
+    height: 3px;
+    background: #333;   
+    position: absolute;
+    bottom: 0;
+}
+
+.burger .bar::before {
+transform: translateY(-8px);
+}
+
+.burger .bar::after{
+    transform: translateY(8px);
+}
+
 
 .nav.active {
     display: flex;
@@ -147,4 +193,14 @@ a:hover {
     flex-direction: row;
     gap: 1rem;
    }
+}
+
+
+@media screen and (max-width:749px) {
+    
+}
+
+.hero {
+    background: #5b6c78;
+    color: white;
 }
