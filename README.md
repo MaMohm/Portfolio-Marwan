@@ -88,7 +88,6 @@ Vous pouvez le cloner, l’utiliser, le modifier librement à des fins éducativ
 
 ---
 
-## ✅ Mise en ligne
-
-Déployé avec : `GitHub Pages` / `Netlify` (à préciser si utilisé).  
+## ✅ Mise en ligne  
 URL du projet : https://github.com/MaMohm/mon_premier_projet.git
+
