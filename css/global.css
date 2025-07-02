@@ -21,6 +21,36 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size:  1.6rem; 
     color: #555;
+    margin: 1rem;
+    line-height: 1.6;
+}
+
+h1 ,h2 , h3 ,h4 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 750px;
+    font-style: normal;   
+    color: #000;
+    line-height: 1.1;
+}
+
+h1,
+ .h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+ }
+
+h2,
+ .h2 {
+    font-size: 2.6rem;
+    text-transform: uppercase;
+
+}
+
+h3,
+.h3 {
+    font-size: 2.4rem;
+
 }
 
 /* sections */
@@ -28,10 +58,22 @@ section {
     padding: 5.5rem 0;
 }
 
+
+.section_title {
+    margin-top: 0;
+    font-size: 3.8rem;
+}
+
 .header {
     background: #FFFFFF;
     border: 1px solid  #EEE;
-    
+}
+
+@media screen and (max-width:749px) {
+    .section_header {
+    text-align: center;
+    margin-bottom: 3rem;
+    }
 
 }
 
@@ -58,10 +100,14 @@ section {
 .grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .grid_item {
     width: 100%;
+    padding: 1rem;
+    flex-grow: 1;
+    flex-shrink: 0;
 }
 
 .nav {
@@ -239,11 +285,15 @@ transform: translateY(-8px);
     align-items: flex-start;
     text-align: left;
    }
+   .hero_item.left {
+    align-items:flex-start;
+   }
    .hero_avatar image {
     max-width: 400px;
     border-radius: 50% ;
    }
    .hero title {
+    color: inherit;
        font-size: 5rem;
    }
 }
@@ -264,5 +314,43 @@ transform: translateY(-8px);
 .hero title{
     font-size: 4rem;
     margin: 1.6rem 0 0 0 0;
+}
 
+.about {
+    padding-top: 0;
+}
+
+.about  section{
+    padding-top: 0;
+}
+
+.about .section_title {
+    margin-top: 2.8rem;
+}
+
+
+@media screen and (max-width:749px) {
+    .about img {
+        padding-right: 3rem;
+    }
+}
+
+.services {
+    background: #F5F5F5;
+    padding: 3rem 0;
+}
+
+.services_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    margin:  auto;
+    border: 2px solid #5b6c78;
+    border-radius: 50%;
+}
+
+.services_icon svg {
+    height: 35px;
 }
