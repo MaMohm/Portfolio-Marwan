@@ -1,11 +1,11 @@
 /*cesi est un commentaire */
 
-*{
+* {
     box-sizing: border-box;
 }
 
-html{
-    font-size:  62.5%;
+html {
+    font-size: 62.5%;
 }
 
 a {
@@ -19,41 +19,67 @@ img {
 
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size:  1.6rem; 
+    font-size: 1.6rem;
     color: #555;
-    margin: 1rem;
+    margin: 0;
+    padding: 20px;
     line-height: 1.6;
+    background-color: #f8f8f8;
 }
+
 li {
     margin-bottom: 2rem;
 }
 
-h1 ,h2 , h3 ,h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
-    font-weight: 750px;
-    font-style: normal;   
-    color: #000;
-    line-height: 1.1;
+    font-weight: 750;
+    font-style: normal;
+    background: #5b6c78;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 
 h1,
- .h2 {
+.h1 {
     font-size: 3.2rem;
     font-weight: 700;
- }
+}
 
 h2,
- .h2 {
+.h2 {
     font-size: 2.6rem;
     text-transform: uppercase;
-
 }
 
 h3,
 .h3 {
-    font-size: 2.4rem;
+    background: #5b6c78;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
 
+/* Override h4 styles for skills section */
+.skills h4 {
+    margin: 0;
+    background: none;
+    color: #333;
+    padding: 0;
+    font-size: 1.4rem;
+    text-transform: none;
+    font-weight: 600;
 }
 
 /* sections */
@@ -61,26 +87,27 @@ section {
     padding: 5.5rem 0;
 }
 
-
 .section_title {
-    margin-top: 0;
     font-size: 3.8rem;
-    margin-bottom: 4rem;
     color: #333;
-    font-family: Playfair Display, serif;
+    margin-bottom: 1rem;
+    font-family: "Playfair Display", serif;
 }
 
 .header {
     background: #FFFFFF;
-    border: 1px solid  #EEE;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
 }
 
 @media screen and (max-width:749px) {
-    .section_header {
-    text-align: center;
-    margin-bottom: 3rem;
+    .section-header {
+        text-align: center;
+        margin-bottom: 3rem;
     }
-
 }
 
 @media screen and (min-width:750px) {
@@ -90,6 +117,11 @@ section {
 }
 
 /* container*/
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
 
 @media screen and (min-width:750px) {
     .container {
@@ -99,51 +131,72 @@ section {
     }
 }
 
-.container {
-    padding: 1rem 2rem;
-}
-
 .d-flex {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-  
+
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-content: center;
-    gap: 1rem;
-    align-items: stretch;
+    gap: 3rem;
+    align-items: start;
 }
 
 @media screen and (max-width:749px) {
     .grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .section_title {
+        font-size: 2.8rem;
+    }
+
+    .progressbar {
+        height: 4rem;
+    }
+
+    .bar {
+        font-size: 1.2rem;
     }
 }
 
 @media screen and (min-width:750px) {
     .grid {
-        grid-template-columns: repeat(1fr, 1fr);
-        align-items: stretch;
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
     }
 }
+
 .grid_item {
-    padding: 1rem;
-    flex-grow: 1 ;
-    flex-shrink: 1;
-    background: #F5F5F5;
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-    display: grid
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.nav {
-    display:none;
+.grid_item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
 
+/* Special styling for skills section */
+#mes_compétences .grid_item {
+    background: white;
+    border-radius: 12px;
+    padding: 2.5rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8ecf0;
+}
+
+#mes_compétences .grid {
+    gap: 3rem;
+    align-items: start;
+}
+
+/* Navigation styles */
+.nav {
+    display: none;
 }
 
 .socials {
@@ -151,12 +204,11 @@ section {
     display: flex;
 }
 
-
 .logo {
     font-size: 4.5rem;
     font-family: "Itim", cursive;
-        font-weight: 500;
-        letter-spacing: 2.2px;
+    font-weight: 500;
+    letter-spacing: 2.2px;
 }
 
 .header_socials_icon {
@@ -166,24 +218,21 @@ section {
     gap: 1rem;
 }
 
-
 .icons {
-    display:flex;
+    display: flex;
     list-style: none;
     height: 36px;
     width: 36px;
     padding: 0.5rem;
     align-items: center;
     justify-content: center;
-    
 }
 
-
 .nav_list {
-   list-style: none;
+    list-style: none;
     margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     gap: 2rem;
     flex-direction: row;
 }
@@ -194,16 +243,15 @@ header a {
 
 a:hover {
     color: red;
-
 }
 
-.header  .right{
+.header .right {
     display: flex;
     align-items: center;
 }
 
 .burger {
-    background:none;
+    background: none;
     border: none;
     width: 35px;
     height: 35px;
@@ -217,41 +265,32 @@ a:hover {
     margin-left: 1.2rem;
 }
 
-.bar{
-    width: 22px;
-    height: px;
-    background: #333;
-    transition: all 0.3s ease;
-}
-
-.bar  .burger {
+.burger .bar {
     display: block;
     width: 22px;
     height: 3px;
     margin: 4px 0;
     background: #333;
+    position: relative;
 }
 
-
-
-.burger .bar::before .burger .bar::after {
+.burger .bar::before,
+.burger .bar::after {
     display: block;
     content: "";
     width: 22px;
     height: 3px;
-    background: #333;   
+    background: #333;
     position: absolute;
-    bottom: 0;
 }
 
 .burger .bar::before {
-transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
-.burger .bar::after{
+.burger .bar::after {
     transform: translateY(8px);
 }
-
 
 .nav.active {
     display: flex;
@@ -259,32 +298,28 @@ transform: translateY(-8px);
     gap: 1rem;
 }
 
-
 @media screen and (min-width:750px) {
     .nav {
         display: flex;
         flex-direction: row;
         gap: 2rem;
     }
+
     .burger {
         display: none;
-    
     }
-   .nav_list{
-    flex-direction: row;
-    gap: 1rem;
-   }
+
+    .nav_list {
+        flex-direction: row;
+        gap: 1rem;
+    }
 }
 
-
-@media screen and (max-width:749px) {
-    
-}
-
+/* Hero section */
 .hero {
     background: #5b6c78;
     color: white;
-    padding: 1rem 0 0 0 ;
+    padding: 1rem 0 0 0;
 }
 
 .hero_item {
@@ -293,40 +328,39 @@ transform: translateY(-8px);
     align-items: center;
     justify-content: center;
     text-align: center;
-
 }
-
 
 @media screen and (max-width:749px) {
     .hero_item.left {
-            order: 2;
-        }
-    
+        order: 2;
+    }
+
     .hero_item.right {
-            order: 1;
-        }
-
+        order: 1;
+    }
 }
 
-@media  screen and (min-width:750px) {
+@media screen and (min-width:750px) {
     .hero_item {
-    flex: 1 0 50%;
-    align-items: flex-start;
-    text-align: left;
-   }
-   .hero_item.left {
-    align-items:flex-start;
-   }
-   .hero_avatar image {
-    max-width: 400px;
-    border-radius: 50% ;
-   }
-   .hero title {
-    color: inherit;
-       font-size: 5rem;
-   }
-}
+        flex: 1 0 50%;
+        align-items: flex-start;
+        text-align: left;
+    }
 
+    .hero_item.left {
+        align-items: flex-start;
+    }
+
+    .hero_avatar img {
+        max-width: 400px;
+        border-radius: 50%;
+    }
+
+    .hero_title {
+        color: inherit;
+        font-size: 5rem;
+    }
+}
 
 .hero .grid {
     display: flex;
@@ -336,20 +370,21 @@ transform: translateY(-8px);
     flex-wrap: wrap;
 }
 
-.hero_item span{
-    text-transform:uppercase ;
+.hero_item span {
+    text-transform: uppercase;
 }
 
-.hero title{
+.hero_title {
     font-size: 4rem;
-    margin: 1.6rem 0 0 0 0;
+    margin: 1.6rem 0;
 }
 
+/* About section */
 .about {
     padding-top: 0;
 }
 
-.about  section{
+.about section {
     padding-top: 0;
 }
 
@@ -357,13 +392,13 @@ transform: translateY(-8px);
     margin-top: 2.8rem;
 }
 
-
 @media screen and (max-width:749px) {
     .about img {
-    padding-right: 3rem;
+        padding-right: 3rem;
     }
 }
 
+/* Services section */
 .service {
     background: #F5F5F5;
 }
@@ -374,8 +409,7 @@ transform: translateY(-8px);
     justify-content: center;
     width: 90%;
     height: 90%;
-    margin:  auto;
-    
+    margin: auto;
 }
 
 .service_content {
@@ -394,7 +428,8 @@ transform: translateY(-8px);
     .service {
         text-align: center;
         display: grid;
-        }
+    }
+
     .service_icon {
         justify-content: center;
     }
@@ -406,140 +441,192 @@ transform: translateY(-8px);
         flex-direction: column;
         align-items: center;
     }
+
     .service_icon {
         margin-right: 2rem;
     }
 }
 
-/*My skills*/
+/* Skills section - IMPROVED */
+.mes_compétences {
+    background: #f8f9fa;
+    padding: 5.5rem 0;
+}
 
 .skills {
-    background: white;
-    padding: 5.5rem 0;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    gap: 1rem;
-
-    
-}
-.skills-layout {
-    display: grid;
-    grid-template-columns: 1fr 3rem;
-    gap: 2rem;
-    align-items: start;
-}
-
-.skills h4, .skills p {
-    display: grid;
-     
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .skills li {
-    background-color: #F5F5F5;
-    border-left: 3px solid rgba(91, 107, 120);
-    padding:2rem 2rem;
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    flex-direction: column;
-    justify-content: center;
-    }
-
-.skills_name {
-    font-weight: bold;
-    font-size: 1.8rem;
+    background-color: #f8f9fa;
+    border-left: 4px solid #5b6c78;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 1.2rem;
+    border-radius: 6px;
+    font-size: 1.4rem;
+    font-weight: 500;
     color: #333;
-    width: 30%;
-    min-width: 120px;
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap: 2rem;
-    align-items: start;
+.skills li:hover {
+    background-color: #e3f2fd;
+    border-left-color: #3498db;
+    transform: translateX(5px);
+    box-shadow: 0 2px 8px rgba(52, 152, 219, 0.15);
 }
 
+.skills li:last-child {
+    margin-bottom: 0;
+}
 
+/* Progress bars - IMPROVED */
 .progressbar {
-    display: block;
-    margin: 0 auto;
+    background-color: #e9ecef;
+    border-radius: 8px;
+    height: 4.5rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    border: 1px solid #dee2e6;
+}
+
+.progressbar:last-child {
+    margin-bottom: 0;
 }
 
 .bar {
     background: #5b6c78;
     height: 100%;
-    color: #fff;
-    padding-left: 0.5rem;
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
-    white-space: nowrap;
-}
-
-.skills .progressbar {
-    margin-bottom: 2rem;
-    display: block;
-    width: 100%;
-    height: 2rem;
-    border-radius: 4px;
-    overflow: hidden;
-    justify-content: center;
-}
-
-
-.skills .bar {
-    background: #5b6c78;
-    padding: 0.5rem 1rem;
-    font-size: 1.4rem;
-}
-
-.skill-tag {
-    background-color: #5b6c78;
+    padding: 0 1.5rem;
     color: white;
-    padding: 1rem 1.5rem;
-    border-radius: 4px;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.progressbar:hover .bar::after {
+    left: 100%;
+}
+
+.progressbar:hover .bar {
+    background: #4a5862;
+}
+
+/* Specific skill colors */
+.progressbar:nth-child(1) .bar {
+    background: #e34c26;
+}
+
+/* HTML */
+.progressbar:nth-child(2) .bar {
+    background: #1572b6;
+}
+
+/* CSS */
+.progressbar:nth-child(3) .bar {
+    background: #f7df1e;
+    color: #333;
+}
+
+/* JavaScript */
+.progressbar:nth-child(4) .bar {
+    background: #777bb4;
+}
+
+/* Git/PHP */
+.progressbar:nth-child(5) .bar {
+    background: #339933;
+}
+
+/* Python/Node */
+
+/* Industrial skills different colors */
+.grid_item:last-child .progressbar:nth-child(1) .bar {
+    background: #2ecc71;
+}
+
+.grid_item:last-child .progressbar:nth-child(2) .bar {
+    background: #e67e22;
+}
+
+.grid_item:last-child .progressbar:nth-child(3) .bar {
+    background: #9b59b6;
+}
+
+.grid_item:last-child .progressbar:nth-child(4) .bar {
+    background: #e74c3c;
+}
+
+.grid_item:last-child .progressbar:nth-child(5) .bar {
+    background: #34495e;
+}
+
+.grid_item:last-child .progressbar:nth-child(6) .bar {
+    background: #16a085;
+}
+
+/* Skills section titles */
+#mes_compétences h3 {
+    background: #2c3e50;
+    color: white;
+    padding: 1.5rem;
     text-align: center;
-    font-weight: 10%;
+    font-weight: bold;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    letter-spacing: 0.5px;
 }
 
+/* Responsive improvements */
 @media screen and (max-width:749px) {
-    .skills-content {
-            padding: 2rem;
-        }
-    
-        .skills_name {
-            width: 30%;
-            font-size: 3rem;
-        }
-    
-        .skills li {
-            flex-direction: column;
-            align-items: stretch;
-            gap: 2rem;
-            justify-content: stretch;
-        }
-    
-        .progressbar {
-            width: 100%;
-            height: 2rem;
-        }
-}
-    
+    .skills li {
+        padding: 1rem;
+        font-size: 1.2rem;
+    }
 
-@media screen and (min-width:750px) {
-    .skillslist {
-        width: 1200px;
-        margin: 0 auto;
+    .progressbar {
+        height: 3.5rem;
+    }
+
+    .bar {
+        font-size: 1.1rem;
+        padding: 0 1rem;
+    }
+
+    #mes_compétences .grid_item {
         padding: 2rem;
     }
+}
+
+@media screen and (min-width:750px) {
     .progressbar {
-        width: 100%;
-        height: 2rem;
-        border-radius: 4px;
-        overflow: hidden;
-        justify-content: center;
+        height: 4.5rem;
+    }
+
+    .bar {
+        font-size: 1.3rem;
     }
 }
