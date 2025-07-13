@@ -35,10 +35,12 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 750;
-    font-style: normal;
+    .delius-regular {
+        font-family: "Delius", cursive;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 2rem;
+    }
     background: #5b6c78;
     color: white;
     padding: 1.5rem;
@@ -483,6 +485,11 @@ a:hover {
     margin-bottom: 0;
 }
 
+.portfolio .grid_item {
+    max-width: 100%;
+    margin-bottom: 0;
+}
+
 /* Progress bars - IMPROVED */
 .progressbar {
     background-color: #e9ecef;
@@ -589,7 +596,7 @@ a:hover {
 /* Skills section titles */
 #mes_compétences h3 {
     background: #2c3e50;
-    color: white;
+    color: rgb(245, 245, 246);
     padding: 1.5rem;
     text-align: center;
     font-weight: bold;
