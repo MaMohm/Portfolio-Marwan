@@ -328,6 +328,8 @@ section {
     font-size: 1.9rem;
     margin-bottom: 2rem;
     color: rgba(255, 255, 255, 0.9);
+    animation-duration: 0.8s;
+    animation-name: slideinright;
 }
 
 .hero_left span {
@@ -345,6 +347,8 @@ section {
 .hero_left h1 {
     font-size: 3.2rem;
     line-height: 1.2;
+    animation-duration: 0.8s;
+    animation-name: slideinright;
 }
 
 .hero_left .name {
@@ -361,6 +365,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-duration: 0.8s;
+    animation-name: slideinleft;
 }
 
 .hero-avatar {
@@ -370,6 +376,7 @@ section {
     overflow: hidden;
     border: 5px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
 }
 
 .hero-avatar img {
@@ -880,6 +887,26 @@ footer .header_socials_icon .icons:hover {
     }
 }
 
+@keyframes slideinleft {
+    from {
+        transform: translateX(-110%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideinright {
+    from {
+        transform: translateX(110%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
 /*=== UTILITY CLASSES ===*/
 .hide {
     display: none !important;
@@ -927,6 +954,8 @@ body.menu-open {
     .hero-avatar {
         width: 250px;
         height: 250px;
+        animation-duration: 0.8s;
+        animation-name: slideinleft;
     }
 
     .services .grid {
